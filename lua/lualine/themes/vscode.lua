@@ -1,52 +1,36 @@
--- Copyright (c) 2020-2021 Mofiqul Islam
+-- Copyright (c) 2020-2021 shadmansaleh
 -- MIT license, see LICENSE for more details.
-local vscode = {}
-local colors = {}
-
-if vim.g.vscode_style == 'dark' then
-    colors.bg = '#262626'
-    colors.fg = '#ffffff'
-    colors.red = '#f44747'
-    colors.green = '#619955'
-    colors.blue = '#0a7aca'
-    colors.lightblue = '#5CB6F8'
-    colors.yellow = '#ffaf00'
-else
-    colors.bg = '#E5EBF1'
-    colors.fg = '#343434'
-    colors.red = '#FF0000'
-    colors.green = '#008000'
-    colors.blue = '#AF00DB'
-    colors.lightblue = '#0451A5'
-    colors.yellow = '#ffaf00'
-end
-
-vscode.normal = {
-    b = { fg = colors.blue, bg = colors.bg },
-    a = { fg = vim.g.vscode_style == 'dark' and colors.fg or colors.bg, bg = colors.blue, gui = 'bold' },
-    c = { fg = colors.fg, bg = colors.bg },
+-- Credit: Zoltan Dalmadi(lightline)
+-- LuaFormatter off
+local colors = {
+  blue   = '#569cd6',
+  green  = '#6a9955',
+  purple = '#c586c0',
+  red1   = '#d16969',
+  yellow = '#dcdcaa',
+  orange = '#ce9178',
+  fg     = '#d4d4d4',
+  bg     = '#007acc',
+  -- bg     = '#68217a',
+  -- bg     = '#252525',
+  gray1  = '#5c6370',
+  gray2  = '#2c323d',
+  gray3  = '#3e4452',
 }
-
-vscode.visual = {
-    a = { fg = colors.bg, bg = colors.lightblue, gui = 'bold' },
-    b = { fg = colors.lightblue, bg = colors.bg },
+-- LuaFormatter on
+return {
+  normal = {
+    a = {fg = colors.fg, bg = colors.bg, gui = 'bold'},
+    b = {fg = colors.fg, bg = colors.bg},
+    c = {fg = colors.fg, bg = colors.bg}
+  },
+  insert = {a = {fg = colors.fg, bg = colors.bg, gui = 'bold'}},
+  visual = {a = {fg = colors.fg, bg = colors.bg, gui = 'bold'}},
+  command = {a = {fg = colors.fg, bg = colors.bg, gui = 'bold'}},
+  replace = {a = {fg = colors.fg, bg = colors.bg, gui = 'bold'}},
+  inactive = {
+    a = {fg = colors.fg, bg = colors.bg},
+    b = {fg = colors.fg, bg = colors.bg},
+    c = {fg = colors.fg, bg = colors.bg}
+  }
 }
-
-vscode.inactive = {
-    b = { fg = colors.bg, bg = colors.fg },
-    a = { fg = colors.fg, bg = colors.gray, gui = 'bold' },
-}
-
-vscode.replace = {
-    b = { fg = colors.yellow, bg = colors.bg },
-    a = { fg = vim.g.vscode_style == 'dark' and colors.bg or colors.fg, bg = colors.yellow, gui = 'bold' },
-    c = { fg = colors.fg, bg = colors.bg },
-}
-
-vscode.insert = {
-    a = { fg = vim.g.vscode_style == 'dark' and colors.bg or colors.fg, bg = colors.yellow, gui = 'bold' },
-    b = { fg = colors.yellow, bg = colors.bg },
-    c = { fg = colors.fg, bg = colors.bg },
-}
-
-return vscode
