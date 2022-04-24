@@ -492,10 +492,10 @@ theme.load_syntax = function()
         },
 
         -- LSP
-        DiagnosticError = { c.vscRed, nil, 'none', nil },
-        DiagnosticWarn = { c.vscYellow, nil, 'none', nil },
-        DiagnosticInfo = { c.vscBlue, nil, 'none', nil },
-        DiagnosticHint = { c.vscBlue, nil, 'none', nil },
+        DiagnosticError = { c.vscRed, nil, 'italic', nil },
+        DiagnosticWarn = { c.vscYellow, nil, 'italic', nil },
+        DiagnosticInfo = { c.vscBlue, nil, 'italic', nil },
+        DiagnosticHint = { c.vscBlue, nil, 'italic', nil },
         DiagnosticUnderlineError = { nil, nil, 'undercurl', c.vscRed },
         DiagnosticUnderlineWarn = { nil, nil, 'undercurl', c.vscYellow },
         DiagnosticUnderlineInfo = { nil, nil, 'undercurl', c.vscBlue },
