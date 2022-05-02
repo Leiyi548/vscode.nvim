@@ -506,8 +506,8 @@ theme.load_syntax = function()
 
         -- nvim-cmp
         -- CmpItemAbbrDeprecated = {fg = C.gray, style = "strikethrough", },
-        CmpItemAbbrMatch = { C.ui3_blue },
-        CmpItemAbbrMatchFuzzy = { C.ui3_blue },
+        CmpItemAbbrMatch = { C.ui3_blue, style = 'bold' },
+        CmpItemAbbrMatchFuzzy = { C.ui3_blue, style = 'bold' },
         CmpItemKindFunction = { C.ui_purple },
         CmpItemKindMethod = { C.ui_purple },
         CmpItemKindConstructor = { C.ui_orange },
