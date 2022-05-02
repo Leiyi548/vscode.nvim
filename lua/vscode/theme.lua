@@ -10,6 +10,7 @@ local C = {
     ui4_blue = '#75BEFF',
     ui_orange = '#E8AB53',
     ui_purple = '#B180D7',
+    black = '#111317',
 }
 theme.load_syntax = function()
     local c = colors.generate()
@@ -504,10 +505,14 @@ theme.load_syntax = function()
         LspReferenceRead = { nil, c.vscPopupHighlightGray, 'none', nil },
         LspReferenceWrite = { nil, c.vscPopupHighlightGray, 'none', nil },
 
+        -- lsp_signature
+        NormalFloat = { C.fg, C.black, nil, nil },
+        FloatBorder = { C.fg, C.black, nil, nil },
+
         -- nvim-cmp
         -- CmpItemAbbrDeprecated = {fg = C.gray, style = "strikethrough", },
-        CmpItemAbbrMatch = { C.ui3_blue, style = 'bold' },
-        CmpItemAbbrMatchFuzzy = { C.ui3_blue, style = 'bold' },
+        CmpItemAbbrMatch = { C.ui3_blue, nil, 'bold', nil },
+        CmpItemAbbrMatchFuzzy = { C.ui3_blue, nil, 'bold', nil },
         CmpItemKindFunction = { C.ui_purple },
         CmpItemKindMethod = { C.ui_purple },
         CmpItemKindConstructor = { C.ui_orange },
