@@ -7,6 +7,7 @@ local C = {
     ui_blue = '#264F78',
     ui2_blue = '#042E48',
     ui3_blue = '#0195F7',
+    light_blue = '#0195F7',
     ui4_blue = '#75BEFF',
     ui_orange = '#E8AB53',
     ui_purple = '#B180D7',
