@@ -23,7 +23,7 @@ return {
         a = { fg = colors.fg, bg = colors.bg, gui = 'bold' },
         b = { fg = colors.fg, bg = colors.bg },
         c = { fg = colors.fg, bg = colors.bg },
-        z = { fg = colors.fg },
+        z = { fg = colors.fg, bg = colors.bg },
     },
     insert = { a = { fg = colors.fg, bg = colors.bg, gui = 'bold' }, z = { fg = colors.fg } },
     visual = { a = { fg = colors.fg, bg = colors.bg, gui = 'bold' }, z = { fg = colors.fg } },
