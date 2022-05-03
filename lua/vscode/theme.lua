@@ -508,8 +508,8 @@ theme.load_syntax = function()
         LspReferenceWrite = { nil, c.vscPopupHighlightGray, 'none', nil },
 
         -- lsp_signature
-        NormalFloat = { C.fg, C.black, nil, nil },
-        FloatBorder = { C.fg, C.black, nil, nil },
+        NormalFloat = { C.fg, C.bg, nil, nil },
+        FloatBorder = { C.fg, C.bg, nil, nil },
 
         -- nvim-cmp
         -- CmpItemAbbrDeprecated = {fg = C.gray, style = "strikethrough", },
