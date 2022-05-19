@@ -513,8 +513,8 @@ theme.load_syntax = function()
 
         -- nvim-cmp
         -- CmpItemAbbrDeprecated = {fg = C.gray, style = "strikethrough", },
-        CmpItemAbbrMatch = { C.ui3_blue, nil, 'bold,italic', nil },
-        CmpItemAbbrMatchFuzzy = { C.ui3_blue, nil, 'bold,italic', nil },
+        CmpItemAbbrMatch = { C.ui3_blue, nil, 'bold', nil },
+        CmpItemAbbrMatchFuzzy = { C.ui3_blue, nil, 'bold', nil },
         CmpItemKindFunction = { C.ui_purple },
         CmpItemKindMethod = { C.ui_purple },
         CmpItemKindConstructor = { C.ui_orange },
@@ -570,7 +570,7 @@ theme.load_syntax = function()
         syntax.TelescopeNormal = { c.vscFront, nil, 'none', nil }
         syntax.TelescopeSelection = { c.vscFront, c.vscPopupHighlightBlue, 'none', nil }
         syntax.TelescopeMultiSelection = { c.vscFront, c.vscPopupHighlightBlue, 'none', nil }
-        syntax.TelescopeMatching = { c.vscMediumBlue, nil, 'bold,italic', nil }
+        syntax.TelescopeMatching = { c.vscMediumBlue, nil, 'bold', nil }
         syntax.TelescopePromptPrefix = { c.vscFront, nil, 'none', nil }
 
         -- symbols-outline
