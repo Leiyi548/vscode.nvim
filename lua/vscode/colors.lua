@@ -34,8 +34,11 @@ local generate = function()
             vscDiffRedLightLight = '#FB0101',
             vscDiffGreenDark = '#373D29',
             vscDiffGreenLight = '#4B5632',
-            vscSearchCurrent = '#4B5632',
+            -- vscSearchCurrent = '#4B5632',
+            vscSearchCurrent = '#264F78',
             vscSearch = '#264F78',
+            -- vscSearchCurrent = '#613315',
+            -- vscSearch = '#613315',
 
             -- Syntax colors
             vscGray = '#808080',
