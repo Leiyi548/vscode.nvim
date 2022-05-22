@@ -54,7 +54,7 @@ theme.load_syntax = function()
         PmenuSbar = { nil, c.vscPopupHighlightGray, 'none', nil },
         PmenuThumb = { nil, c.vscPopupFront, 'none', nil },
         Question = { c.vscBlue, c.vscBack, 'none', nil },
-        Search = { c.vscNone, c.vscSearch, 'bold', nil },
+        Search = { c.vscNone, c.vscSearch, 'none', nil },
         SpecialKey = { c.vscBlue, c.vscNone, 'none', nil },
         StatusLine = { c.vscFront, c.vscLeftMid, 'none', nil },
         StatusLineNC = { c.vscFront, c.vscLeftDark, 'none', nil },
@@ -342,7 +342,7 @@ theme.load_syntax = function()
         rubyConstant = { c.vscBlueGreen, nil, 'none', nil },
 
         -- Golang
-        goPackage = { c.vscBlue, nil, 'none', nil },
+        goPackage = { c.vscBlue, nil, 'italic,bold', nil },
         goImport = { c.vscBlue, nil, 'italic,bold', nil },
         goVar = { c.vscBlue, nil, 'none', nil },
         goConst = { c.vscBlue, nil, 'none', nil },
@@ -367,6 +367,9 @@ theme.load_syntax = function()
         goFunctionCall = { c.vscYellow, nil, 'none', nil },
         goMethodCall = { c.vscYellow, nil, 'bold', nil },
         goSingleDecl = { c.vscLightBlue, nil, 'none', nil },
+        goTSKeywordFunction = { nil, nil, 'italic,bold', nil },
+        goTSType = { nil, nil, 'italic', nil },
+        goTSParameter = { nil, nil, 'bold', nil },
         -- Python
         pythonTSInclude = { c.vscPink, nil, 'italic,bold', nil },
         pythonTSKeyword = { c.vscPink, nil, 'italic,bold', nil },
