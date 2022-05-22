@@ -343,7 +343,7 @@ theme.load_syntax = function()
 
         -- Golang
         goPackage = { c.vscBlue, nil, 'none', nil },
-        goImport = { c.vscBlue, nil, 'italic', nil },
+        goImport = { c.vscBlue, nil, 'italic,bold', nil },
         goVar = { c.vscBlue, nil, 'none', nil },
         goConst = { c.vscBlue, nil, 'none', nil },
         goStatement = { c.vscPink, nil, 'none', nil },
@@ -368,7 +368,9 @@ theme.load_syntax = function()
         goMethodCall = { c.vscYellow, nil, 'bold', nil },
         goSingleDecl = { c.vscLightBlue, nil, 'none', nil },
         -- Python
-        pythonTSInclude = { c.vscPink, nil, 'italic', nil },
+        pythonTSInclude = { c.vscPink, nil, 'italic,bold', nil },
+        pythonTSKeyword = { c.vscPink, nil, 'italic,bold', nil },
+        pythonTSKeywordFunction = { c.vscPink, nil, 'italic,bold', nil },
         pythonStatement = { c.vscBlue, nil, 'none', nil },
         pythonOperator = { c.vscBlue, nil, 'none', nil },
         pythonException = { c.vscPink, nil, 'none', nil },
