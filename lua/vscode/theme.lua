@@ -517,7 +517,13 @@ theme.load_syntax = function()
         FloatBorder = { C.fg, C.bg, nil, nil },
 
         -- nvim-cmp
-        -- CmpItemAbbrDeprecated = {fg = C.gray, style = "strikethrough", },
+        -- Highlights unmatched characters of each deprecated completion field.
+        CmpItemAbbrDeprecated = { C.gray, nil, 'strikethrough', nil },
+        -- cmp中没有被匹配到的字符
+        CmpItemAbbr = { c.vscYellow, nil, 'bold', nil },
+        -- (lsp) (path) (buffer) highlight
+        CmpItemMenu = { c.vscFront, nil, 'none', nil },
+
         CmpItemAbbrMatch = { C.ui3_blue, nil, 'bold', nil },
         CmpItemAbbrMatchFuzzy = { C.ui3_blue, nil, 'bold', nil },
         CmpItemKindFunction = { C.ui_purple },
