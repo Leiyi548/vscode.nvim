@@ -42,6 +42,7 @@ local generate = function()
 
             -- Syntax colors
             vscGray = '#808080',
+            vscGhost = '#797d81',
             vscViolet = '#646695',
             vscBlue = '#569CD6',
             vscDarkBlue = '#223E55',

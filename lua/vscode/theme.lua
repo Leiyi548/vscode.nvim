@@ -66,7 +66,7 @@ theme.load_syntax = function()
         VisualNOS = { c.vscNone, c.vscSelection, 'none', nil },
         WarningMsg = { c.vscRed, c.vscBack, 'bold', nil },
         WildMenu = { c.vscNone, c.vscSelection, 'none', nil },
-        Comment = { c.vscGreen, nil, isItalic and 'italic' or 'none', nil },
+        Comment = { c.vscGhost, nil, isItalic and 'italic' or 'none', nil },
         Constant = { c.vscBlue, nil, 'none', nil },
         String = { c.vscOrange, nil, 'none', nil },
         Character = { c.vscOrange, nil, 'none', nil },
@@ -342,6 +342,7 @@ theme.load_syntax = function()
         rubyConstant = { c.vscBlueGreen, nil, 'none', nil },
 
         -- Golang
+        goTSComment = { c.vscGreen, nil, 'italic', nil },
         goPackage = { c.vscBlue, nil, 'italic,bold', nil },
         goImport = { c.vscBlue, nil, 'italic,bold', nil },
         goVar = { c.vscBlue, nil, 'none', nil },
@@ -371,6 +372,7 @@ theme.load_syntax = function()
         goTSType = { nil, nil, 'italic', nil },
         goTSParameter = { nil, nil, 'bold', nil },
         -- Python
+        pythonTSComment = { c.vscGreen, nil, 'italic', nil },
         pythonTSInclude = { c.vscPink, nil, 'italic,bold', nil },
         pythonTSKeyword = { c.vscPink, nil, 'italic,bold', nil },
         pythonTSKeywordFunction = { c.vscPink, nil, 'italic,bold', nil },
@@ -408,6 +410,7 @@ theme.load_syntax = function()
         gitcommitBlank = { c.vscPink, nil, 'none', nil },
 
         -- Lua
+        luaTSComment = { c.vscGreen, nil, 'italic', nil },
         luaFuncCall = { c.vscYellow, nil, 'none', nil },
         luaFuncArgName = { c.vscLightBlue, nil, 'none', nil },
         luaFuncKeyword = { c.vscPink, nil, 'none', nil },
