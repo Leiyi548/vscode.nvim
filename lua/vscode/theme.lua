@@ -520,7 +520,7 @@ theme.load_syntax = function()
         -- Highlights unmatched characters of each deprecated completion field.
         CmpItemAbbrDeprecated = { C.gray, nil, 'strikethrough', nil },
         -- cmp中没有被匹配到的字符
-        CmpItemAbbr = { c.vscYellow, nil, 'bold', nil },
+        CmpItemAbbr = { c.vscFront, nil, nil, nil },
         -- (lsp) (path) (buffer) highlight
         CmpItemMenu = { c.vscFront, nil, 'none', nil },
 
