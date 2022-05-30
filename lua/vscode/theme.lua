@@ -56,8 +56,8 @@ theme.load_syntax = function()
         Question = { c.vscBlue, c.vscBack, 'none', nil },
         Search = { c.vscNone, c.vscSearch, 'none', nil },
         SpecialKey = { c.vscBlue, c.vscNone, 'none', nil },
-        StatusLine = { c.vscFront, c.vscLeftMid, 'none', nil },
-        StatusLineNC = { c.vscFront, c.vscLeftDark, 'none', nil },
+        StatusLine = { c.vscFront, c.vscBack, 'none', nil },
+        StatusLineNC = { c.vscFront, c.vscBack, 'none', nil },
         TabLine = { c.vscFront, c.vscTabOther, 'none', nil },
         TabLineFill = { c.vscFront, c.vscTabOutside, 'none', nil },
         TabLineSel = { c.vscFront, c.vscTabCurrent, 'none', nil },
@@ -458,8 +458,8 @@ theme.load_syntax = function()
         NvimTreeOpenedFolderName = { nil, no_nvimtree_bg and c.vscCursorDarkDark or c.vscLeftDark, 'none', nil },
 
         -- Bufferline
-        BufferLineIndicatorSelected = { c.vscLeftDark, nil, 'none', nil },
-        BufferLineFill = { nil, c.vscLeftDark, 'none', nil },
+        BufferLineIndicatorSelected = { c.vscPopupHighlightBlue, nil, 'none', nil },
+        BufferLineFill = { nil, c.vscBack, 'none', nil },
 
         -- BarBar
         BufferCurrent = { c.vscFront, c.vscTabCurrent, 'none', nil },
@@ -586,6 +586,9 @@ theme.load_syntax = function()
         syntax.TelescopeMultiSelection = { c.vscFront, c.vscPopupHighlightBlue, 'none', nil }
         syntax.TelescopeMatching = { c.vscMediumBlue, nil, 'bold', nil }
         syntax.TelescopePromptPrefix = { c.vscFront, nil, 'none', nil }
+        syntax.TelescopePreviewTitle = { c.vscPink, nil, 'none', nil }
+        syntax.TelescopePromptTitle = { c.vscBlueGreen, nil, 'none', nil }
+        syntax.TelescopeResultsTitle = { c.vscYellow, nil, 'none', nil }
 
         -- symbols-outline
         -- white fg and lualine blue bg
